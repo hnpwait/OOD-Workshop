@@ -32,4 +32,18 @@ public class MyRange {
         }
     }
 
+    public String getResult() {
+        int startNumber = getStart();
+        int endNumber = getEnd();
+        String result = "";
+        for (int i = startNumber ; i <= endNumber; i++ ) {
+            if(i != startNumber) {
+                result = result.concat(',' + Integer.toString(i));
+            } else {
+                result = Integer.toString(i);
+            }
+        }
+        return result;
+    }
+
 }
