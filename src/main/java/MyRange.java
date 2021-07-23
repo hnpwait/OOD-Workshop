@@ -17,7 +17,6 @@ public class MyRange {
     public int getStart() {
         if(isStartWithInclude()) {
             return this.input.charAt(1) - ASCII_VALUE_OF_1;
-//        return Integer.parseInt(String.valueOf(this.input.charAt(1)));
         }
         else {
             return this.input.charAt(1) - 47;
@@ -27,7 +26,6 @@ public class MyRange {
     public int getEnd() {
         if(isEndWithInclude()) {
             return this.input.charAt(3) - 48;
-//        return Integer.parseInt(String.valueOf(this.input.charAt(3)));
         }
         else {
             return this.input.charAt(3) - 49;
