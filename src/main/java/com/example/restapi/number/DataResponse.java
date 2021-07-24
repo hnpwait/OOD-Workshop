@@ -3,6 +3,9 @@ package com.example.restapi.number;
 public class DataResponse {
     private String id;
 
+    public DataResponse() {
+    }
+
     public String getId() {
         return id;
     }
